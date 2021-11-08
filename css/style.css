@@ -36,6 +36,30 @@ body {
   margin-left: 108px;
 }
 
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 31px 0;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.navbar-bottom {
+  background-color: #0A223D;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
