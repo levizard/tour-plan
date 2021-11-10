@@ -268,6 +268,13 @@ img {
   z-index: 10;
 }
 
+.swiper-slide__img {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .slider {
   width: 728px;
 }
