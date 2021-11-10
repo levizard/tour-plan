@@ -10,8 +10,10 @@
       margin: 4px 0 0 14px
     &__description
       margin: 0
-    &__grid
-      margin-top: 20px
+  &__grid
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
   &-wrapper
     display: flex
     align-items: center
@@ -26,6 +28,11 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+  &-right
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -94,3 +101,83 @@
     &__next
       right: 18px
       background-image: url(../img/arrow-next.svg)
+.booking
+  width: 350px
+  // max-height: 210px
+  border-radius: 8px
+  padding: 28px
+  background-color: $dark
+  color: $light
+  &__info
+    display: flex
+    justify-content: space-between
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    &:last-child
+      margin-top: 9px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 9px
+  &__heading
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-decoration: none
+    color: $light
+  &__num
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    background-color: $primary
+    padding: 12px auto
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    border: none
+    border-radius: 4px
+    margin-top: 16px
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  background-color: black
+  border-radius: 10px
