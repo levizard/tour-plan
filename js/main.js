@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper", {
 
   // Navigation arrows
   navigation: {
-    prevEl: ".slider-button__prev",
-    nextEl: ".slider-button__next",
+    prevEl: ".slider__prev",
+    nextEl: ".slider__next",
   },
 });

@@ -175,14 +175,8 @@
                 </div>
               </div>
               <!-- If we need navigation buttons -->
-              <button
-                class="slider-button slider-button__prev"
-                id="prev"
-              ></button>
-              <button
-                class="slider-button slider-button__next"
-                id="next"
-              ></button>
+              <button class="slider-button slider__prev" id="prev"></button>
+              <button class="slider-button slider__next" id="next"></button>
             </div>
             <!-- /.swiper -->
           </div>
@@ -226,7 +220,14 @@
             </div>
             <!-- /.booking -->
             <div class="map hotel__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.9292109287353!2d34.39805705085732!3d27.965454120623043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1441b5faf8b92785%3A0x332753ad7b1d61f!2z0KXQuNC70YLQvtC9INCo0LDRgNC60YEg0JHRjdC5!5e0!3m2!1sru!2sru!4v1636547543131!5m2!1sru!2sru" width="100%" height="213" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.9292109287353!2d34.39805705085732!3d27.965454120623043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1441b5faf8b92785%3A0x332753ad7b1d61f!2z0KXQuNC70YLQvtC9INCo0LDRgNC60YEg0JHRjdC5!5e0!3m2!1sru!2sru!4v1636547543131!5m2!1sru!2sru"
+                width="100%"
+                height="213"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -235,6 +236,23 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input
+            type="text"
+            class="subscribe__input"
+            placeholder="Your email address"
+          />
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- /.newsletter -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
