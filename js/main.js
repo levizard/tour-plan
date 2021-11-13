@@ -1,11 +1,6 @@
-const swiper = new Swiper(".swiper", {
+varhotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
   
   keyboard: {
     enabled: true,
@@ -14,7 +9,23 @@ const swiper = new Swiper(".swiper", {
 
   // Navigation arrows
   navigation: {
-    prevEl: ".slider__prev",
-    nextEl: ".slider__next",
+    prevEl: ".hotel-slider__prev",
+    nextEl: ".hotel-slider__next",
+  },
+});
+
+const reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+
+  keyboard: {
+    enabled: false,
+    onlyInViewport: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    prevEl: ".reviews-slider__prev",
+    nextEl: ".reviews-slider__next",
   },
 });
