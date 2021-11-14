@@ -1,11 +1,11 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px
+  .hotel
+    &-slider
+      width: 590px
 @media (max-width: 992px)
-  .container,
-  .newsletter-wrapper
+  .container, .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -21,18 +21,18 @@
         font-size: 12px
         line-height: 15px
   .hotel
-    &__grid
+    &-grid
       flex-direction: column
     &-right
       margin-top: 30px
       flex-direction: row
       justify-content: space-between
+    &-slider
+      width: 100%
   .booking
     width: 340px
   .map
     width: 340px
-  .slider
-    width: 100%
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -71,10 +71,10 @@
       &__offer
         order: -1
         margin-left: 0
+      &-slider
+        height: 350px
   .stars
     flex-basis: content
-  .slider
-    height: 350px
   .hotel
     &-right
       flex-direction: column
