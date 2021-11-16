@@ -10,7 +10,7 @@
   &-slider
     &__item
       position: relative
-      width: 730px
+      max-width: 730px
       background-color: #fff
       border-radius: 8px
       display: flex
@@ -27,6 +27,7 @@
         height: 47px
         background-image: url(../img/quote-left.svg)
         background-repeat: no-repeat
+        z-index: 10
       &::after
         content: ''
         position: absolute
@@ -36,6 +37,7 @@
         height: 47px
         background-image: url(../img/quote-right.svg)
         background-repeat: no-repeat
+        z-index: 10
     &__button
       position: absolute
       top: 50%
@@ -81,3 +83,4 @@
     &__text
       margin: 30px auto 0
       max-width: 537px
+      z-index: 20
