@@ -1,4 +1,4 @@
-varhotelSlider = new Swiper(".hotel-slider", {
+const hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
   
@@ -25,7 +25,7 @@ const reviewsSlider = new Swiper(".reviews-slider", {
 
   // Navigation arrows
   navigation: {
-    prevEl: ".reviews-slider__prev",
-    nextEl: ".reviews-slider__next",
+    prevEl: ".reviews-slider__button-prev",
+    nextEl: ".reviews-slider__button-next",
   },
 });
