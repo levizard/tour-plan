@@ -1,0 +1,109 @@
+.packages
+    padding: 45px 0 65px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+    &-wrapper
+        margin-top: 65px
+        display: grid
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr)
+        grid-gap: 30px
+.package
+    position: relative
+    max-width: 350px
+    height: 500px
+    background-color: $dark
+    border-radius: 8px
+    overflow: hidden
+    color: $light
+    &__image
+        width: 100%
+        height: 250px
+        object-fit: cover
+    &__flash-offer
+        position: absolute
+        z-index: 1
+        top: 26px
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        padding: 8px 12px
+        background-color: $primary
+        border-radius: 0px 4px 4px 0px
+    &__wrapper
+        padding: 30px 20px 24px 32px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin: 0
+    &__details
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        margin-top: 24px
+    &__detail
+        margin-top: 10px
+        display: flex
+        align-items: center
+    &__icon
+        margin-right: 14px
+    &__order
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 36px
+    &__price
+        display: flex
+        flex-direction: column
+    &__old-price
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+    &__new-price
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+    &__button
+        padding: 10px 26px
+        border-radius: 4px
+        background-color: $primary
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        border: none
+        color: $light
+    &__rating
+        display: flex
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160.6%
+        margin-top: 6px
+    &-big
+        max-width: 730px
+        grid-column: 1 / 3
+        display: flex
+        &__image
+            height: 500px
+            flex-basis: 50%
+        &__wrapper
+            padding-top: 46px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            flex-basis: 50%
