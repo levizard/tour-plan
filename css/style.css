@@ -1377,6 +1377,52 @@ template {
     height: 255px;
     margin-top: 20px;
   }
+  .package__item {
+    height: 470px;
+  }
+  .package__wrapper {
+    padding: 5px 20px;
+  }
+  .package__image {
+    height: 50%;
+  }
+  .package__details {
+    margin-top: 5px;
+  }
+  .package__order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 12px;
+  }
+  .package__old-price {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .package__button {
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 6px;
+  }
+  .package__description {
+    font-size: 12px;
+  }
+  .package-big__image {
+    width: 50%;
+    height: 100%;
+  }
+  .package-big__wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1502,6 +1548,35 @@ template {
     height: 255px;
     margin-top: 10px;
   }
+  .packages-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .package__item {
+    max-height: 400px;
+  }
+  .package__wrapper {
+    padding-bottom: 20px;
+  }
+  .package__order {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 20px;
+  }
+  .package__old-price {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .package__new-price {
+    font-size: 20px;
+  }
+  .package-big__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1520,6 +1595,32 @@ template {
   .card {
     width: 100%;
     margin-top: 20px;
+  }
+  .packages-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .package__item {
+    max-width: 100%;
+  }
+  .package__description {
+    display: none;
+  }
+  .package-big {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 450px;
+  }
+  .package-big__image {
+    height: 50%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
