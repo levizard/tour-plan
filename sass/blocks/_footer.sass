@@ -94,6 +94,13 @@
         border: none
         cursor: pointer
         margin-top: 22px
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        &-wrapper
+            width: 100%
+            display: flex
+            justify-content: space-between
     &__info
         font-style: normal
         font-weight: bold
@@ -101,3 +108,21 @@
         line-height: 15px
         color: $footer-info-color
         margin-top: 40px
+    &__rules
+        position: relative
+        width: 100%
+        margin-top: 100px
+        &-links
+            text-align: center
+        &-link
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            text-decoration: none
+            color: $light
+            margin-left: 6px
+    &__payment
+        position: absolute
+        right: 0
+        bottom: 0

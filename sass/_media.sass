@@ -7,6 +7,12 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+      &:nth-child(2)
+        margin-top: 18px
+
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -77,7 +83,40 @@
       &__wrapper
         justify-content: flex-start
         margin-top: 20px
-
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+      &:nth-child(2)
+        margin: 0
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 6
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__rules-links
+      position: absolute
+      left: 0
+      bottom: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -176,6 +215,11 @@
     &-big
       &__wrapper
         justify-content: space-between
+  .footer
+    &__input
+      flex-basis: 100%
+      &:nth-child(2)
+        margin-top: 18px
 @media (max-width: 576px)
   .logo
     width: 100px
@@ -203,3 +247,59 @@
       &__image
         height: 50%
         width: 100%
+  .reviews
+    padding-bottom: 50px
+  .activities
+    padding: 40px 0 60px
+  .footer
+    padding-top: 70px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        flex-direction: column
+        align-items: flex-start
+      &-links
+        margin: 22px 0 0
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__button
+      order: 1
+      margin-top: 15px
+      width: 50%
+      &-wrapper
+        flex-direction: column
+    &__info
+      margin-top: 15px
+    &__rules
+      margin-top: 30px
+      &-links
+        position: static
+        text-align: start
+      &-link
+        &:first-child
+          margin-left: 0
+    &__payment
+      position: static
+      margin-top: 10px
+
