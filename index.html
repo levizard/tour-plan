@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -27,7 +27,7 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
             <input
               type="text"
               class="search__input"
@@ -39,7 +39,7 @@
           </form>
           <!-- /.search -->
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -60,6 +60,28 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible ">
+              <a href="#" class="user navbar__user navbar__user_mobile_visible">
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name_light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible ">
+              <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -446,7 +468,7 @@
           </div>
           <div class="package__item package">
             <span class="package__flash-offer">Flash Offer</span>
-            <img src="img/package-5.jpg"" alt="" class="package__image">
+            <img src="img/package-5.jpg" alt="" class="package__image">
             <div class="package__wrapper">
               <div class="package__info">
                 <h3 class="package__title">Hotel Five Star</h3>
@@ -758,10 +780,9 @@
                 placeholder="Phone Number*"
               />
               <textarea
-                class="footer__message"
+                class="footer__message footer__textarea"
                 cols="30"
                 rows="10"
-                class="footer__textarea"
                 placeholder="Message"
               ></textarea>
               <div class="footer__button-wrapper">
