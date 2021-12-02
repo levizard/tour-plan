@@ -1213,6 +1213,14 @@ img {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.modal__overlay__visible {
+  visibility: visible;
 }
 
 .modal__dialog {
@@ -1227,6 +1235,15 @@ img {
   background-color: #0A223D;
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.modal__dialog__visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
