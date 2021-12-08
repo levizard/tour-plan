@@ -9,7 +9,6 @@
         z-index: 100
         visibility: hidden
         transition: opacity 0.2s
-        opacity: 0
         &__visible
             visibility: visible
     &__dialog
@@ -18,7 +17,7 @@
         left: 50%
         transform: translate(-50%, -50%)
         width: 478px
-        height: 487px
+        min-height: 487px
         padding: 33px 88px
         background-color: $dark
         border-radius: 8px

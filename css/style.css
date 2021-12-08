@@ -52,6 +52,11 @@ img {
   line-height: 15px;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,6 +655,7 @@ img {
   line-height: 19px;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .package__rating {
@@ -779,6 +785,7 @@ img {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1147,8 +1154,15 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+  border: none;
+  margin-bottom: 6px;
+}
+
+.footer__input-group {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  margin-top: 15px;
 }
 
 .footer__message {
@@ -1217,7 +1231,6 @@ img {
   visibility: hidden;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  opacity: 0;
 }
 
 .modal__overlay__visible {
@@ -1231,7 +1244,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 478px;
-  height: 487px;
+  min-height: 487px;
   padding: 33px 88px;
   background-color: #0A223D;
   border-radius: 8px;
@@ -1650,11 +1663,11 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .footer__input:nth-child(2) {
+  .footer__input-group:nth-child(2) {
     margin-top: 18px;
   }
 }
@@ -1901,7 +1914,7 @@ template {
     height: 1px;
     background-color: #333333;
   }
-  .user__name {
+  .user__name_light {
     color: #ffffff;
     margin: 10px 0 0;
   }
@@ -2171,6 +2184,11 @@ template {
   .footer__payment {
     position: static;
     margin-top: 10px;
+  }
+  .modal__dialog {
+    width: 420px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
