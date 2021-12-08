@@ -82,7 +82,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "Your name should be more than 2 symbols",
+          minlength: "Your name should be longer than 2 symbols",
         },
         phone: {
           required: "Please add your phone number",
@@ -96,5 +96,6 @@ $(document).ready(function () {
   });
 
   $('.phone').mask('+7 (000) 000-00-00');
-
+  
+  AOS.init();
 });
